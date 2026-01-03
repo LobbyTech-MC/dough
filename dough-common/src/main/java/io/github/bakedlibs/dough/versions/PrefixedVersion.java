@@ -4,7 +4,8 @@ import java.util.Objects;
 
 import javax.annotation.Nonnull;
 
-import org.apache.commons.lang.Validate;
+import io.github.bakedlibs.dough.common.Validate;
+
 
 /**
  * This {@link Version} implementation consists of two components.

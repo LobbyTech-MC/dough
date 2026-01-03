@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.block.Block;
@@ -72,8 +72,14 @@ public final class PlayerHead {
             throw new UnsupportedOperationException("Cannot update skin texture, no adapter found");
         }
 
+        if (block == null) {
+        	return;
+        }
         Material material = block.getType();
 
+        if (material == Material.VOID_AIR) {
+        	return;
+        }
         if (material != Material.PLAYER_HEAD && material != Material.PLAYER_WALL_HEAD) {
             throw new IllegalArgumentException("Cannot update a head texture. Expected a Player Head, received: " + material);
         }

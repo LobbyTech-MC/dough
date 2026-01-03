@@ -74,7 +74,6 @@ public final class ProtectionManager {
     }
 
     @ParametersAreNonnullByDefault
-    @SuppressWarnings("java:S1612")
     private void loadModuleImplementations(Plugin plugin) {
         PluginManager pm = plugin.getServer().getPluginManager();
 

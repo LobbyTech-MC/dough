@@ -2,11 +2,11 @@ package io.github.bakedlibs.dough.versions;
 
 import javax.annotation.Nonnull;
 
-import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
 
 import io.github.bakedlibs.dough.common.CommonPatterns;
+import io.github.bakedlibs.dough.common.Validate;
 
 /**
  * This is an extension of {@link SemanticVersion}, specifically designed

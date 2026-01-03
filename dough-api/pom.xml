@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -24,7 +24,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.5.0</version>
+                        <version>3.6.0</version>
 
                         <configuration>
                             <includeDependencySources>true</includeDependencySources>
@@ -106,7 +106,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.5.1</version>
+                <version>3.6.0</version>
 
                 <configuration>
                     <createSourcesJar>true</createSourcesJar>
@@ -178,6 +178,13 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.20.5</version>
+            <scope>system</scope>
+            <systemPath>F:\Github\dough\dough-api\libs\craftbukkit-1.21.1.jar</systemPath>
+        </dependency>
         <dependency>
             <groupId>io.github.baked-libs</groupId>
             <artifactId>dough-common</artifactId>

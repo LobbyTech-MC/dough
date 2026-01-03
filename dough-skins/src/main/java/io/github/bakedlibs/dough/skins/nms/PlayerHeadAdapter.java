@@ -23,9 +23,9 @@ public interface PlayerHeadAdapter {
         try {
             MinecraftVersion version = MinecraftVersion.get();
 
-            if (version.isAtLeast(1, 20, 5)) {
-                // 1.20.5 mappings
-                return new PlayerHeadAdapter20v5();
+            if (version.isAtLeast(1, 21, 1)) {
+                // 1.21.1 mappings
+                return new PlayerHeadAdapter21v1();
             } else if (version.isAtLeast(1, 18)) {
                 // 1.18 mappings
                 return new PlayerHeadAdapter18();

@@ -6,9 +6,9 @@ import java.util.regex.Matcher;
 
 import javax.annotation.Nonnull;
 
-import org.apache.commons.lang.Validate;
 
 import io.github.bakedlibs.dough.common.CommonPatterns;
+import io.github.bakedlibs.dough.common.Validate;
 
 /**
  * A {@link SemanticVersion} follows the semantic version convention.

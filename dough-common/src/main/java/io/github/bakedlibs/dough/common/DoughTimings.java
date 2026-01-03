@@ -1,15 +1,15 @@
 package io.github.bakedlibs.dough.common;
 
-import org.apache.commons.lang.Validate;
-import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.Plugin;
-
-import javax.annotation.Nonnull;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.logging.Logger;
+
+import javax.annotation.Nonnull;
+
+import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.Plugin;
 
 public class DoughTimings {
 
